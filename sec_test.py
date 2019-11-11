@@ -68,14 +68,36 @@ class TestUser(unittest.TestCase):
             test_delete_contact to test if we can remove a contact from our contact list
             '''
             self.new_user.save_user()
-            test_user = User("Test","user","0712345678","test@user.com")
+            test_user = User("Test","user","0712345678","test@user.com","1111")
             test_user.save_user()
 
-            self.new_contact.delete_contact()
+            self.new_user.delete_user()
             self.assertEqual(len(User.user_list),1)
         
+    def test_find_user_by_number(self):
+            '''
+            test to check if we can find a user by phone number and display information
+            '''
+            self.new_user.save_user()
+            test_user = User("Test","user","0712345678","test@user.com","1111")
+            test_user.save_user()
 
-  
+            found_user = User.find_by_number("0711223344")
+            self.assertEqual(found_user.email,test_user.email)
 
+    def test_user_exists(self):
+            '''
+            test to check if we can return a Boolean if we cannot find the user.
+            '''
+
+            self.new_user.save_user()
+            test_user = User("Test","user","0711223344","test@user.com","1111")
+            test_user.save_user()
+
+            user_exists = User.user_list("0711223344")
+
+            self.assertTrue(user_exists)
+
+            
 if __name__ == '__main__':
     unittest.main()
