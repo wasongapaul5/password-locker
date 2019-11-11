@@ -59,7 +59,7 @@ class TestUser(unittest.TestCase):
         objects to our contact_list
         '''
         self.new_user.save_user()
-        test_user = User("Test","user","0712345678","test@user.com","1111")
+        test_user = User("Oketch","Paul","0703921156","oketchpaul@gmail.com","1111")
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
 
@@ -68,7 +68,7 @@ class TestUser(unittest.TestCase):
             test_delete_contact to test if we can remove a contact from our contact list
             '''
             self.new_user.save_user()
-            test_user = User("Test","user","0712345678","test@user.com","1111")
+            test_user = User("Oketch","Paul","0703921156","oketchpaul@gmail.com","1111")
             test_user.save_user()
 
             self.new_user.delete_user()
@@ -79,10 +79,10 @@ class TestUser(unittest.TestCase):
             test to check if we can find a user by phone number and display information
             '''
             self.new_user.save_user()
-            test_user = User("Test","user","0712345678","test@user.com","1111")
+            test_user = User("Oketch","Paul","0703921156","oketchpaul@gmail.com","1111")
             test_user.save_user()
 
-            found_user = User.find_by_number("0711223344")
+            found_user = User.find_by_number("0712345678")
             self.assertEqual(found_user.email,test_user.email)
 
     def test_user_exists(self):
@@ -101,7 +101,7 @@ class TestUser(unittest.TestCase):
         '''
 
         self.assertEqual(User.display_users(),User.user_list)
-        
+
             
 if __name__ == '__main__':
     unittest.main()
