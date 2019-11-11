@@ -58,3 +58,13 @@ class User:
         for user in cls.user_list:
             if user.phone_number == number:
                 return True
+
+        return False
+
+    @classmethod
+    def display_users(cls):
+        '''
+        method that returns the user list
+        '''
+
+        return cls.user_list
