@@ -52,7 +52,7 @@ def main():
             print('\n')
 
             while True:
-                    print("Use these short codes : cu - create a new user, du - display users, fc -find a user, ex -exit the usert list ")
+                    print("Use these short codes : cu - create a new user, du - display users, fu -find a user, ex -exit the usert list ")
 
                     short_code = input().lower()
 
