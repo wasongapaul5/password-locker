@@ -7,19 +7,21 @@ def create_user(fname,lname,phone,email,password):
     '''
 
     new_user = User(fname,lname,phone,email,password)
-    return new  
+    return new_user
 
 def save_users(User):
-     '''
-     Function to save user
-     '''
-   
+    '''
+    Function to save user
+    '''
+    user.save_user()
+    
 
 def del_user(user):
-     '''
-     Function to delete a user
-     '''
+    '''
+    Function to delete a user
+    '''
     user.delete_user()
+     
   
 
 
@@ -114,3 +116,7 @@ def main():
                             break
                     else:
                             print("I really didn't get that. Please use the short codes")
+
+
+if __name__ == '__main__':
+    main()
