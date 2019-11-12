@@ -1,5 +1,5 @@
 import unittest
-from sec import User
+from sec import user
 
 class TestUser(unittest.TestCase):
 
