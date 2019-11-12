@@ -1,5 +1,5 @@
 import unittest
-from sec import user
+from sec import User
 
 class TestUser(unittest.TestCase):
 
@@ -53,19 +53,19 @@ class TestUser(unittest.TestCase):
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
         
-    def test_save_multiple_contact(self):
+    def test_save_multiple_user(self):
         '''
-        test_save_multiple_contact to check if we can save multiple contact
-        objects to our contact_list
+        test_save_multiple_user to check if we can save multiple user
+        objects to our user_list
         '''
         self.new_user.save_user()
         test_user = User("Oketch","Paul","0703921156","oketchpaul@gmail.com","1111")
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
 
-    def test_delete_contact(self):
+    def test_delete_user(self):
             '''
-            test_delete_contact to test if we can remove a contact from our contact list
+            test_delete_user to test if we can remove a user from our user list
             '''
             self.new_user.save_user()
             test_user = User("Oketch","Paul","0703921156","oketchpaul@gmail.com","1111")

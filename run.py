@@ -34,13 +34,13 @@ def find_user(user):
    
 def check_existing_users(number):
     '''
-    Function that check if a contact exists with that number and return a Boolean
+    Function that check if a user exists with that number and return a Boolean
     '''
     return User.user_exist(number)
 
 def display_users():
     '''
-    Function that returns all the saved contacts
+    Function that returns all the saved users
     '''
     return User.display_users()
 

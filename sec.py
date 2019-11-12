@@ -22,7 +22,7 @@ class User:
 
     def delete_user(self):
         '''
-        delete_user method deletes a saved contact from our user_list
+        delete_user method deletes a saved user from our user_list
         '''
 
         User.user_list.remove(self)
@@ -46,11 +46,11 @@ class User:
     @classmethod
     def user_exist(cls,phone_number):
         '''
-        Method that checks if a contact exists from the contact list.
+        Method that checks if a user exists from the user list.
         Args:
             number: Phone number to search if it exists
         Returns :
-            Boolean: True or false depending if the contact exists
+            Boolean: True or false depending if the user exists
         '''
         for user in cls.user_list:
             if user.phone_number == phone_number:
