@@ -1,11 +1,11 @@
 # project Name
-## Password Locker
+- **secure me.**
 
 # Description
-## An application that will help a user manage their  passwords     and even generate new passwords.
+-**An application that will help a user manage their  passwords     and even generate new passwords.**
 
 # Author
-## WasongaPaul5
+-**WasongaPaul5.**
 
 # Installation
 - **git clone or download the zip file.**
@@ -14,7 +14,7 @@
 - **launch the files.**
 
 # License
-## MIT LICENSE.
+-**MIT LICENSE.**
 
 # Copyright
-## @C[password locker.inc 2019].All rights reserved.
+-**@C[password locker.inc 2019].All rights reserved.**
