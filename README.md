@@ -1,4 +1,4 @@
-# project Name
+# Project Name
 - **secure me.**
 
 # Description
@@ -17,4 +17,4 @@
 -**MIT LICENSE.**
 
 # Copyright
--**@C[password locker.inc 2019].All rights reserved.**
+-**@C[secure me.inc 2019]All rights reserved.**
