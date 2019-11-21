@@ -1,11 +1,14 @@
 # Project Name
-- **secure me.**
+- **Password Locker.***
 
 # Description
--**An application that will help a user manage their  passwords     and even generate new passwords.**
+-**A python application that allows a user to create a new account , login to the account using their username and password, store passwords with their respective accounts and generate random passwords for the user.**
 
 # Author
 -**WasongaPaul5.**
+
+# Technology used
+-**Python3**
 
 # Installation
 - **git clone or download the zip file.**
@@ -17,4 +20,7 @@
 -**MIT LICENSE.**
 
 # Copyright
--**@C[secure me.inc 2019]All rights reserved.**
+-**@C[secure me.inc 2019].**
+
+# Collaborate
+- To collaborate,reach me on wasongapaul5@gmail.com
