@@ -1,5 +1,5 @@
 # Project Name
-- **Password Locker.***
+- **Password Locker.**
 
 # Description
 -**A python application that allows a user to create a new account , login to the account using their username and password, store passwords with their respective accounts and generate random passwords for the user.**

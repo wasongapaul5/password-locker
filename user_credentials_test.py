@@ -35,7 +35,7 @@ class TestUser(unittest.TestCase):
         Method to test if we can delete a user
         '''
         self.new_user.save_user()
-        test_user = User('paull', 'pal', 'wasongapaul5@gmail.com',
+        test_user = User('paul', 'pal', 'wasongapaul5@gmail.com',
                          '0791555693', '12081998')
         test_user.save_user()
         test_user.delete_user()
